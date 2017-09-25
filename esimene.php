@@ -1,3 +1,12 @@
+	<form method="POST">
+		<label>Kasutajanimi: </label>
+		<input type="text">	
+	<form method="POST">
+		<label>Parool: </label>
+		<input type="text">	
+		<input id="Login" type="submit" value="Logi sisse">
+
+
 <?php
 	//muutujad
 	$myName = "Egert";
@@ -84,7 +93,7 @@
 	</h1>
 	<p>See veebileht on loodud õppetöö raames ning ei sisalda tõsiseltvõetavat sisu.</p>
 	<?php
-		echo "<p>Kõige esimene PHP abil väljastatud sõnum.</p>";
+		echo "<p></p>";
 		echo "<p>Täna on ";
 		echo date("d. ") .$monthNow .date(" Y") .", käes on " .$partOfDay;
 		echo ".</p>";
@@ -97,9 +106,8 @@
 		<label>Teie sünniaasta: </label>
 		<input name="birthYear" id="birthYear" type="number" min="1900" max="2017" value="<?php echo $myBirthYear; ?>">
 		
-		<input id="submitBirthYear" type="submit" value="Kinnita">
-	
-	</form>
+		<input id="submitBirthYear" type="submit" value="Kinnita";>
+		
 	<?php
 		if ( $ageNote != ""){
 			echo $ageNote;

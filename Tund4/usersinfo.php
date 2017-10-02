@@ -32,15 +32,17 @@
 	<h2>Kõik süsteemi kasutajad</h2>
 	<table border="1" style="border: 1px solid black; border-collapse: collapse">
 	<tr>
-		<th>Eesnimi</th><th>perekonnanimi</th><th>e-posti aadress</th>
+		<th>Eesnimi</th><th>Perekonnanimi</th><th>E-mail</th>
 	</tr>
 	<tr>
-		<td>Juku</td><td>Porgand</td><td>juku.porgand@aed.ee</td>
+		<td>Kalle</td><td>Mees</td><td>kalle.mees@tlu.ee</td>
 	</tr>
 	<tr>
-		<td>Mari</td><td>Karus</td><td>mari.karus@aed.ee</td>
+		<td>Malle</td><td>Naine</td><td>malle.naine@tlu.ee</td>
 	</tr>
-	
+	<tr>
+		<td>Vanja</td><td>Vannis</td><td>vanja.vannis@tlu.ee</td>
+	</tr>
 	</table>
 	
 </body>

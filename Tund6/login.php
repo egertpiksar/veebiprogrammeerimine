@@ -9,7 +9,7 @@
 		exit();
 	}
 	
-	$ideaHTML = "";
+	$idea = "";
 	
 	$signupFirstName = "";
 	$signupFamilyName = "";
@@ -32,7 +32,7 @@
 	
 	$loginEmailError ="";
 	
-	$ideaHTML = latestIdea();
+	$idea = latestIdea();
 	
 	//kas logitakse sisse
 	if (isset($_POST["loginButton"])){
@@ -203,7 +203,7 @@
 </head>
 <body>
 	<h1>Heade mõtete veeb</h1>
-	<p>Värskeim hea mõte: <span><?php echo $ideaHTML; ?></span></p>
+	<p>Värskeim hea mõte: <span><?php echo $idea; ?></span></p>
 	<h2>Logi sisse!</h2>
 	<p>Siin harjutame sisselogimise funktsionaalsust.</p>
 	

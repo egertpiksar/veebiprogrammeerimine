@@ -125,6 +125,9 @@
 		$mysqli->close();
 		return $idea;
 	}
+	while ($stmt->fetch()){
+				$kasutajaRead .= .$firstname . '' .$lastname . "" .$birthday .'' .$gender .'' .$email .''"</p> \n";
+		}
 	
 	/*sisestuse kontrollimise funktsioon
 	function test_input($data){

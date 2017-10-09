@@ -13,6 +13,9 @@
 		session_destroy();
 		header("Location: login.php");
 	}
+	
+	
+		
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +35,7 @@
 	<h2>Kõik süsteemi kasutajad</h2>
 	<table border="1" style="border: 1px solid black; border-collapse: collapse">
 	<tr>
-		<th>Eesnimi</th><th>Perekonnanimi</th><th>E-mail</th>
+		<th>Eesnimi</th><th>Perekonnanimi</th><th>E-mail</th><th>Sünnipäev</th><th>Sugu</th>
 	</tr>
 	<tr>
 		<td>Kalle</td><td>Mees</td><td>kalle.mees@tlu.ee</td>
@@ -44,6 +47,7 @@
 		<td>Vanja</td><td>Vannis</td><td>vanja.vannis@tlu.ee</td>
 	</tr>
 	</table>
+	
 	
 </body>
 </html>

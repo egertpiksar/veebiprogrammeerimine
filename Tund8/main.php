@@ -1,5 +1,6 @@
 <?php
 	require("functions.php");
+	require("upload.php");
 	
 	//kui pole sisseloginud, siis sisselogimise lehele
 	if(!isset($_SESSION["userId"])){
@@ -53,8 +54,13 @@
 	<p><a href="?logout=1">Logi välja</a>!</p>
 	<p><a href="usersinfo.php">Kasutajate info</a></p>
 	<p><a href="userideas.php">Head mõtted</a></p>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+    Laadige pilt oma arvutist:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Laadige ülesse" name="submit">
 	<p>Üks pilt Tallinna Ülikoolist!</p>
 	<img src="<?php echo $dirToRead .$picToShow; ?>" alt="Tallinna Ülikool">
-	
+		<img src="<?php echo $dirToRead .$picToShow; ?>" alt="Tallinna Ülikool">
+
 </body>
 </html>

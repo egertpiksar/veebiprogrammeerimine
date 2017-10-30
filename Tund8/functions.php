@@ -1,6 +1,8 @@
 <?php
 
 	require("../../../config.php");
+	require("main.php");
+	require("upload.php");
 	$database = "if17_piksar_2";
 	
 	//alustan sessiooni

@@ -169,6 +169,7 @@
 	}
 	
 	require("header.php");
+	$visibility= "";
 ?>
 
 <!DOCTYPE html>
@@ -189,7 +190,18 @@
 	<form action="photoupload.php" method="post" enctype="multipart/form-data">
 		<label>Valige pildifail:</label>
 		<input type="file" name="fileToUpload" id="fileToUpload">
-		<input type="submit" value="Lae üles" name="submit">
+		<input type="submit" value="Lae üles" name="submit"></br>
+		<p>Kes näevad pilti?</p>
+		<input type="radio" name="visibility"
+		<?php if (isset($visibility) && $visibility=="avalik") echo "valitud";?>
+		value="avalik">Avalik
+		<input type="radio" name="visibility"
+		<?php if (isset($visibility) && $visibility=="Sisseloginud kasutaja") echo "valitud";?>
+		value="Sisseloginud kasutaja">Sisseloginud kasutaja
+		<input type="radio" name="visibility"
+		<?php if (isset($visibility) && $visibility=="Ainult omanik") echo "valitud";?>
+		value="Ainult omanik">Ainult omanik
+		
 	</form>
 	
 	<span><?php echo $notice; ?></span>

@@ -51,7 +51,7 @@
 	<p><a href="photoupload.php">Fotode üleslaadimine</a></p>
 	<p>Üks pilt Tallinna Ülikoolist!</p>
 	<img src="<?php echo $dirToRead .$picToShow; ?>" alt="Tallinna Ülikool">
-
+	<img src="<?php echo $dirToRead .$picToShow; ?>" alt="Tallinna Ülikool">
 <?php
 	require("footer.php");
 ?>

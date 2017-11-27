@@ -3,7 +3,7 @@
 	$notice = "";
 	$allIdeas = "";
 	
-	//kui pole sisseloginud, siis sisselogimise lehele
+	/*//kui pole sisseloginud, siis sisselogimise lehele
 	if(!isset($_SESSION["userId"])){
 		header("Location: login.php");
 		exit();
@@ -15,7 +15,7 @@
 		session_destroy();
 		header("Location: login.php");
 	}
-	
+	*/
 	//Algab foto laadimise osa
 	$target_dir = "../pildid/";
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);

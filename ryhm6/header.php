@@ -12,7 +12,7 @@ body {margin:0;}
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,7 +25,7 @@ body {margin:0;}
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #4D4567;
   color: white;
 }
 </style>

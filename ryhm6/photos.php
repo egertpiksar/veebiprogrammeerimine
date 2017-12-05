@@ -34,16 +34,21 @@
 		
 	}*/
 	
-	if ($opendir = opendir($dir))
+	
+	//echo "<img src='../pildid/1.jpg' width='400' height='400'>";
+
+
+	
+	/*if ($opendir = opendir($dir))
 	{
 		while(($file = readdir($opendir)) !== FALSE)
 		{
 		  if ($file!="."&&$file!="..")
-			echo "<img src='../pildid/download.jpg' width='400' height='400'>";
+			echo "<img src='../pildid/1.jpg' width='400' height='400'>";
 			
 		}
 	}
-	
+	*/
 /*
 	if(isset($_GET["pilt"], $_GET["reiting"])) {
 		
@@ -72,11 +77,59 @@
 ?>
 
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html>
+<head>
+<style> <!-- See on galerii välimuse osa-->
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 360px;
+}
 
-<div id="rating">
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<!--class on galerii, et saaks välimust muuta-->
+<div class="gallery"><!--DIV ALGUS-->
+  <a target="_blank" href="1.jpg">
+    <img src='../pildid/1.jpg' width="300" height="200">
+ </a>
+
 <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
-<p>HINDA&nbsp;
+<p>&nbsp; <!--TÜHIK-->
+1<input name="rating" type="radio" value="1" />
+2<input name="rating" type="radio" value="2" />
+3<input name="rating" type="radio" value="3" />
+4<input name="rating" type="radio" value="4" />
+5<input name="rating" type="radio" value="5" />
+ &nbsp;&nbsp;<!--TÜHIKUD-->
+<input type="hidden" name="id" value="<?php echo $id; ?>" />
+<input type="submit" value="Salvesta" name="vote" /></p>
+</div><!--DIV LÕPP-->
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src='../pildid/2.jpg' width="300" height="200">
+  </a>
+  <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+<p>&nbsp;
 1<input name="rating" type="radio" value="1" />
 2<input name="rating" type="radio" value="2" />
 3<input name="rating" type="radio" value="3" />
@@ -85,6 +138,28 @@
  &nbsp;&nbsp;
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
 <input type="submit" value="Salvesta" name="vote" /></p>
-<div class="rating">
 </div>
-</form>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src='../pildid/download.jpg' width="300" height="200">
+</a>
+  
+<form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+<p>&nbsp;
+1<input name="rating" type="radio" value="1" />
+2<input name="rating" type="radio" value="2" />
+3<input name="rating" type="radio" value="3" />
+4<input name="rating" type="radio" value="4" />
+5<input name="rating" type="radio" value="5" />
+ &nbsp;&nbsp;
+<input type="hidden" name="id" value="<?php echo $id; ?>" />
+<input type="submit" value="Salvesta" name="vote" /></p>
+
+
+
+
+</body>
+</html>
